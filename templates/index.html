@@ -12,18 +12,25 @@
         color: red;
     }
 
+    iframe {
+        width:100%;
+        height: 65%;
+        border:0px;
+    }
 </style>
 </head>
 
 
 <body>
     <h1>Covid Stats!</h1><br>
+    <!--Post method in form collects the data from the HTML page.
+-->
     <form method="POST">
-        <label >Enter a Country Code</label><br><br>
-    <input placeholder="Country Code" name="text">
-    <input type="submit">
-</form>
-    <img src="{{image }}">
+        <label >Enter a Country Name</label><br><br>
+        <input placeholder="Country Name" name="text">
+        <input type="submit">
+    </form>
+    <iframe src="{{ image }}"></iframe>
 
 
     <p>You have {{ count }} Visitors.</p>
